@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Programming Assignment #1</title>
+</head>
+<body>
+	<h1>Programming Assignment #01</h1>
+	<div>
+		<input type="radio" id="1"name="choice" value="numToWords"> Number to Words <br>
+		<input type="radio" id="2" name="choice" value="wordsToNum"> Words to Number <br>
+		<input type="radio" id="3" name="choice" value="wordsToCurr"> Words to Currency <br>
+		<input type="radio" id="4" name="choice" value="numDelimited"> Number Delimited <br>
+	</div>
+
+	<button onclick="check()">Proceed!</button>
+	
+	<div id="div1" style="display: none"; class="input">
+		Enter Whole number (0 - 1000000) <br>
+		<input type="text" id="input1"><br>
+		Whole number to word <br>
+		<input type="text" id="output1"><br>
+		<button onclick="numToWords()">Number to words!</button>
+	</div>
+
+	<div id="div2" style="display: none"; class="input">
+		Enter numbers (in word)<br>
+		<input type="text" id="input2"><br>
+		Word to number<br>
+		<input type="text" id="output2"><br>
+		<button onclick="wordsToNum('input2', 'output2')">Words to number!</button>
+	</div>
+
+	<div id="div3" style="display: none"; class="input">
+		Enter number (in words) <br>
+		<input type="text" id="input3"><br>
+		Enter currency (USD, JPY, PHP)<br>
+		<input type="text" id="input4"><br>
+		Words to currency<br>
+		<input type="text" id="output3"><br>
+		<button onclick="wordsToCurr('input3', 'output3')">Words to currency!</button>
+	</div>
+
+	<div id="div4" style="display: none"; class="input">
+		Enter number<br>
+		<input type="text" id="input5"><br>
+		Enter delimiter<br>
+		<input type="text" id="input6"><br>
+		Enter number of jumps<br>
+		<input type="text" id="input7"><br>
+		Number delimited<br>
+		<input type="text" id="output4"><br>
+		<button onclick="numDelimited()">Number delimited!</button>
+	</div>
+	<script type="text/javascript" src="deGuzman_Adriell.js"></script>
+</body>
+</html>
